@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700&display=swap');
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background: #0B0B0B;
+  color: #ffffff;
+}
+
+.bc-display {
+  font-family: 'Bebas Neue', sans-serif;
+  letter-spacing: 0.02em;
+}
+
+.gold-text {
+  background: linear-gradient(90deg, #C5A059, #FFD700, #D4AF37);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.gold-bg {
+  background: linear-gradient(90deg, #C5A059, #FFD700, #D4AF37);
+}
+
+/* Placeholder image plates — swap these for real <img> tags at deploy time */
+.plate {
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(to bottom, #1c1a15, #141210, #0B0B0B);
+}
+
+.plate.tone-1 {
+  background: linear-gradient(to bottom, #221d12, #171410, #0B0B0B);
+}
+
+.plate.tone-2 {
+  background: linear-gradient(to bottom, #1a1a1a, #131313, #0B0B0B);
+}
+
+.plate::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  opacity: 0.07;
+  background-image: repeating-linear-gradient(115deg, #D4AF37 0px, #D4AF37 1px, transparent 1px, transparent 26px);
+}
+
+.plate-icon {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgba(212, 175, 55, 0.3);
+}
+
+/* Cart drawer slide animation */
+.drawer {
+  transform: translateX(100%);
+  transition: transform 0.3s ease-out;
+}
+
+.drawer.open {
+  transform: translateX(0);
+}
+
+/* Toast notification */
+.fade-toast {
+  animation: toastIn 0.2s ease-out;
+}
+
+@keyframes toastIn {
+  from {
+    opacity: 0;
+    transform: translate(-50%, 10px);
+  }
+  to {
+    opacity: 1;
+    transform: translate(-50%, 0);
+  }
+}
+
+/* Best-sellers filter tabs */
+.tab-btn.active {
+  background: linear-gradient(90deg, #C5A059, #FFD700, #D4AF37);
+  color: #000;
+  border-color: transparent;
+}
+
+/* Product card quick-add reveal on hover */
+.quick-add {
+  opacity: 0;
+  transition: opacity 0.25s ease;
+}
+
+.product-card:hover .quick-add {
+  opacity: 1;
+}
+
+.collection-title {
+  transition: color 0.2s ease;
+}

@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>BodiedFitByCandy — Sculpted for Power, Designed for Elegance</title>
+
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+<link rel="stylesheet" href="styles.css" />
+</head>
+
+<body class="bc-body">
+
+<!-- ============================================================ -->
+<!-- Header -->
+<!-- ============================================================ -->
+<header class="sticky top-0 z-40 bg-[#0B0B0B]/85 backdrop-blur-md border-b border-[#D4AF37]/25">
+  <div class="max-w-7xl mx-auto px-4 md:px-8 h-16 md:h-20 flex items-center justify-between">
+    <button id="menuToggle" class="md:hidden text-white" aria-label="Toggle menu">
+      <i data-lucide="menu" class="w-6 h-6"></i>
+    </button>
+
+    <a href="#home" class="bc-display text-2xl md:text-3xl gold-text">BodiedFitByCandy</a>
+
+    <nav class="hidden md:flex items-center gap-8 text-sm text-[#9CA3AF] font-medium">
+      <a href="#home" class="hover:text-[#FFD700] transition-colors duration-200">Home</a>
+      <a href="#best-sellers" class="hover:text-[#FFD700] transition-colors duration-200">Shop</a>
+      <a href="#veo-motion-showcase" class="hover:text-[#FFD700] transition-colors duration-200">Veo Motion Showcase</a>
+      <a href="#about-bc" class="hover:text-[#FFD700] transition-colors duration-200">About BC</a>
+      <a href="#reviews" class="hover:text-[#FFD700] transition-colors duration-200">Reviews</a>
+    </nav>
+
+    <div class="flex items-center gap-4 md:gap-5">
+      <button aria-label="Search" class="hover:text-[#FFD700] transition-colors">
+        <i data-lucide="search" class="w-5 h-5"></i>
+      </button>
+      <button aria-label="Wishlist" class="relative hover:text-[#FFD700] transition-colors">
+        <i data-lucide="heart" class="w-5 h-5"></i>
+        <span id="wishlistBadge" class="hidden absolute -top-2 -right-2 text-[10px] bg-[#FFD700] text-black rounded-full w-4 h-4 flex items-center justify-center font-bold">0</span>
+      </button>
+      <button id="cartToggle" aria-label="Cart" class="relative hover:text-[#FFD700] transition-colors">
+        <i data-lucide="shopping-bag" class="w-5 h-5"></i>
+        <span id="cartBadge" class="hidden absolute -top-2 -right-2 text-[10px] bg-[#FFD700] text-black rounded-full w-4 h-4 flex items-center justify-center font-bold">0</span>
+      </button>
+    </div>
+  </div>
+
+  <nav id="mobileMenu" class="hidden md:hidden flex-col gap-1 px-4 pb-4 text-[#9CA3AF] text-sm font-medium border-t border-[#D4AF37]/10">
+    <a href="#home" class="block py-2.5 border-b border-white/5 hover:text-[#FFD700]">Home</a>
+    <a href="#best-sellers" class="block py-2.5 border-b border-white/5 hover:text-[#FFD700]">Shop</a>
+    <a href="#veo-motion-showcase" class="block py-2.5 border-b border-white/5 hover:text-[#FFD700]">Veo Motion Showcase</a>
+    <a href="#about-bc" class="block py-2.5 border-b border-white/5 hover:text-[#FFD700]">About BC</a>
+    <a href="#reviews" class="block py-2.5 border-b border-white/5 hover:text-[#FFD700]">Reviews</a>
+  </nav>
+</header>
+
+<!-- ============================================================ -->
+<!-- Hero -->
+<!-- ============================================================ -->
+<section id="home" class="relative">
+  <div class="max-w-7xl mx-auto px-4 md:px-8 pt-14 md:pt-24 pb-16 md:pb-28 grid md:grid-cols-2 gap-10 md:gap-16 items-center">
+    <div>
+      <p class="text-[#9CA3AF] text-sm tracking-wide mb-4">Founded by Oleita Victory</p>
+      <h1 class="bc-display text-5xl sm:text-6xl md:text-7xl leading-[0.95] mb-6">
+        Sculpted for power,<br />
+        designed for <span class="gold-text">elegance</span>.
+      </h1>
+
+      <svg viewBox="0 0 320 40" class="w-56 md:w-72 h-auto mb-6" aria-hidden="true">
+        <defs>
+          <linearGradient id="swoosh" x1="0" y1="0" x2="1" y2="0">
+            <stop offset="0%" stop-color="#C5A059" />
+            <stop offset="50%" stop-color="#FFD700" />
+            <stop offset="100%" stop-color="#D4AF37" />
+          </linearGradient>
+        </defs>
+        <path d="M4 30 C 80 4, 180 4, 316 22" fill="none" stroke="url(#swoosh)" stroke-width="3" stroke-linecap="round" />
+      </svg>
+
+      <p class="text-[#9CA3AF] text-base md:text-lg mb-8 max-w-md">
+        Compression fabrics engineered for the fit that holds through every rep — built by BodiedFitByCandy for bodies that move.
+      </p>
+      <div class="flex flex-wrap gap-4">
+        <a href="#best-sellers" class="px-7 py-3.5 rounded-full gold-bg text-black font-semibold text-sm hover:opacity-90 transition-opacity">Shop New Arrivals</a>
+        <a href="#collections" class="px-7 py-3.5 rounded-full border border-[#D4AF37] text-[#FFD700] font-semibold text-sm hover:bg-[#D4AF37]/10 transition-colors">Explore Signature Line</a>
+      </div>
+    </div>
+
+    <div class="plate aspect-[3/4] md:aspect-[4/5] rounded-2xl border border-[#D4AF37]/20">
+      <div class="plate-icon"><i data-lucide="sparkles" class="w-8 h-8" style="color: rgba(212,175,55,0.3);"></i></div>
+      <div class="absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-black/80 to-transparent">
+        <p class="bc-display text-2xl text-[#FFD700]">Fall Drop 01</p>
+        <p class="text-[#9CA3AF] text-sm">Campaign imagery goes here</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================ -->
+<!-- Veo Motion Showcase -->
+<!-- ============================================================ -->
+<section id="veo-motion-showcase" class="bg-[#121212] py-16 md:py-24">
+  <div class="max-w-7xl mx-auto px-4 md:px-8">
+    <div class="flex items-end justify-between mb-10">
+      <div>
+        <h2 class="bc-display text-4xl md:text-5xl mb-2">BodiedFitByCandy in Motion</h2>
+        <p class="text-[#9CA3AF] text-sm">Powered by Veo</p>
+      </div>
+    </div>
+
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6">
+      <div class="plate aspect-[3/4] rounded-xl border border-[#D4AF37]/15 group cursor-pointer">
+        <div class="absolute inset-0 flex items-center justify-center">
+          <div class="w-12 h-12 rounded-full border border-[#FFD700]/60 flex items-center justify-center group-hover:scale-110 group-hover:border-[#FFD700] transition-transform duration-300">
+            <i data-lucide="play" class="w-4 h-4 ml-0.5" style="color:#FFD700; fill:#FFD700;"></i>
+          </div>
+        </div>
+        <p class="absolute bottom-3 left-3 right-3 text-xs text-[#9CA3AF]">Fabric in slow motion</p>
+      </div>
+      <div class="plate tone-1 aspect-[3/4] rounded-xl border border-[#D4AF37]/15 group cursor-pointer">
+        <div class="absolute inset-0 flex items-center justify-center">
+          <div class="w-12 h-12 rounded-full border border-[#FFD700]/60 flex items-center justify-center group-hover:scale-110 group-hover:border-[#FFD700] transition-transform duration-300">
+            <i data-lucide="play" class="w-4 h-4 ml-0.5" style="color:#FFD700; fill:#FFD700;"></i>
+          </div>
+        </div>
+        <p class="absolute bottom-3 left-3 right-3 text-xs text-[#9CA3AF]">Studio movement study</p>
+      </div>
+      <div class="plate tone-2 aspect-[3/4] rounded-xl border border-[#D4AF37]/15 group cursor-pointer">
+        <div class="absolute inset-0 flex items-center justify-center">
+          <div class="w-12 h-12 rounded-full border border-[#FFD700]/60 flex items-center justify-center group-hover:scale-110 group-hover:border-[#FFD700] transition-transform duration-300">
+            <i data-lucide="play" class="w-4 h-4 ml-0.5" style="color:#FFD700; fill:#FFD700;"></i>
+          </div>
+        </div>
+        <p class="absolute bottom-3 left-3 right-3 text-xs text-[#9CA3AF]">Street pace, real light</p>
+      </div>
+      <div class="plate aspect-[3/4] rounded-xl border border-[#D4AF37]/15 group cursor-pointer">
+        <div class="absolute inset-0 flex items-center justify-center">
+          <div class="w-12 h-12 rounded-full border border-[#FFD700]/60 flex items-center justify-center group-hover:scale-110 group-hover:border-[#FFD700] transition-transform duration-300">
+            <i data-lucide="play" class="w-4 h-4 ml-0.5" style="color:#FFD700; fill:#FFD700;"></i>
+          </div>
+        </div>
+        <p class="absolute bottom-3 left-3 right-3 text-xs text-[#9CA3AF]">Full range, full support</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================ -->
+<!-- Featured Collections -->
+<!-- ============================================================ -->
+<section id="collections" class="py-16 md:py-24">
+  <div class="max-w-7xl mx-auto px-4 md:px-8">
+    <h2 class="bc-display text-4xl md:text-5xl mb-10">Signature Lines</h2>
+    <div class="grid grid-cols-2 gap-4 md:gap-8">
+
+      <a href="#best-sellers" class="group block">
+        <div class="plate aspect-[3/4] rounded-xl border border-[#D4AF37]/15 mb-3 group-hover:border-[#D4AF37]/50 transition-colors">
+          <div class="absolute inset-0 flex items-end p-4 md:p-5 bg-gradient-to-t from-black/70 via-black/10 to-transparent">
+            <div>
+              <p class="bc-display text-xl md:text-2xl text-white collection-title group-hover:text-[#FFD700]">Sculpt Leggings & Sets</p>
+              <p class="text-[#9CA3AF] text-xs md:text-sm mt-1 hidden sm:block">Compression that holds its shape all day.</p>
+            </div>
+          </div>
+        </div>
+      </a>
+
+      <a href="#best-sellers" class="group block">
+        <div class="plate tone-1 aspect-[3/4] rounded-xl border border-[#D4AF37]/15 mb-3 group-hover:border-[#D4AF37]/50 transition-colors">
+          <div class="absolute inset-0 flex items-end p-4 md:p-5 bg-gradient-to-t from-black/70 via-black/10 to-transparent">
+            <div>
+              <p class="bc-display text-xl md:text-2xl text-white collection-title group-hover:text-[#FFD700]">High-Impact Sports Bras</p>
+              <p class="text-[#9CA3AF] text-xs md:text-sm mt-1 hidden sm:block">Support built for the heaviest lift.</p>
+            </div>
+          </div>
+        </div>
+      </a>
+
+      <a href="#best-sellers" class="group block">
+        <div class="plate tone-2 aspect-[3/4] rounded-xl border border-[#D4AF37]/15 mb-3 group-hover:border-[#D4AF37]/50 transition-colors">
+          <div class="absolute inset-0 flex items-end p-4 md:p-5 bg-gradient-to-t from-black/70 via-black/10 to-transparent">
+            <div>
+              <p class="bc-display text-xl md:text-2xl text-white collection-title group-hover:text-[#FFD700]">Outerwear</p>
+              <p class="text-[#9CA3AF] text-xs md:text-sm mt-1 hidden sm:block">Warm-ups that carry the look past the gym.</p>
+            </div>
+          </div>
+        </div>
+      </a>
+
+      <a href="#best-sellers" class="group block">
+        <div class="plate aspect-[3/4] rounded-xl border border-[#D4AF37]/15 mb-3 group-hover:border-[#D4AF37]/50 transition-colors">
+          <div class="absolute inset-0 flex items-end p-4 md:p-5 bg-gradient-to-t from-black/70 via-black/10 to-transparent">
+            <div>
+              <p class="bc-display text-xl md:text-2xl text-white collection-title group-hover:text-[#FFD700]">Seamless Athleisure</p>
+              <p class="text-[#9CA3AF] text-xs md:text-sm mt-1 hidden sm:block">One less seam to think about, mid-set.</p>
+            </div>
+          </div>
+        </div>
+      </a>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================ -->
+<!-- Best Sellers -->
+<!-- ============================================================ -->
+<section id="best-sellers" class="bg-[#121212] py-16 md:py-24">
+  <div class="max-w-7xl mx-auto px-4 md:px-8">
+    <div class="flex flex-wrap items-center justify-between gap-4 mb-8">
+      <h2 class="bc-display text-4xl md:text-5xl">Best Sellers</h2>
+      <div id="tabBar" class="flex gap-2 flex-wrap">
+        <button data-tab="All" class="tab-btn active px-4 py-1.5 rounded-full text-xs md:text-sm font-medium border border-transparent transition-colors">All</button>
+        <button data-tab="Leggings" class="tab-btn px-4 py-1.5 rounded-full text-xs md:text-sm font-medium border border-[#9CA3AF]/30 text-[#9CA3AF] hover:border-[#D4AF37]/60 hover:text-[#FFD700] transition-colors">Leggings</button>
+        <button data-tab="Tops" class="tab-btn px-4 py-1.5 rounded-full text-xs md:text-sm font-medium border border-[#9CA3AF]/30 text-[#9CA3AF] hover:border-[#D4AF37]/60 hover:text-[#FFD700] transition-colors">Tops</button>
+        <button data-tab="Accessories" class="tab-btn px-4 py-1.5 rounded-full text-xs md:text-sm font-medium border border-[#9CA3AF]/30 text-[#9CA3AF] hover:border-[#D4AF37]/60 hover:text-[#FFD700] transition-colors">Accessories</button>
+      </div>
+    </div>
+
+    <div id="productGrid" class="grid grid-cols-2 gap-4 md:gap-8"></div>
+  </div>
+</section>
+
+<!-- ============================================================ -->
+<!-- Story -->
+<!-- ============================================================ -->
+<section id="about-bc" class="py-16 md:py-24">
+  <div class="max-w-7xl mx-auto px-4 md:px-8 grid md:grid-cols-2 gap-10 md:gap-16 items-center">
+    <div class="plate tone-2 aspect-[3/4] md:aspect-[4/5] rounded-2xl border border-[#D4AF37]/20 order-2 md:order-1">
+      <div class="plate-icon"><i data-lucide="sparkles" class="w-8 h-8" style="color: rgba(212,175,55,0.3);"></i></div>
+    </div>
+    <div class="order-1 md:order-2">
+      <h2 class="bc-display text-4xl md:text-5xl mb-6">The story behind the stitch</h2>
+      <p class="text-[#9CA3AF] leading-relaxed mb-4 max-w-md">
+        Oleita Victory founded BodiedFitByCandy on a simple standard: activewear should hold its shape as hard as the woman wearing it works. Every seam is placed to move with the body it fits, not against it.
+      </p>
+      <p class="text-[#9CA3AF] leading-relaxed max-w-md">
+        From compression leggings to seamless sets, each piece is tested through real training sessions before it ever reaches a rack — premium fabric, curve-conscious cuts, gold-standard finishing.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================ -->
+<!-- Reviews -->
+<!-- ============================================================ -->
+<section id="reviews" class="bg-[#121212] py-16 md:py-24">
+  <div class="max-w-7xl mx-auto px-4 md:px-8">
+    <h2 class="bc-display text-4xl md:text-5xl mb-10">What she's saying</h2>
+    <div class="grid md:grid-cols-3 gap-6">
+
+      <div class="p-6 rounded-xl border border-[#D4AF37]/15 bg-[#0B0B0B]">
+        <div class="flex gap-1 mb-3">
+          <i data-lucide="star" class="w-4 h-4" style="color:#FFD700; fill:#FFD700;"></i>
+          <i data-lucide="star" class="w-4 h-4" style="color:#FFD700; fill:#FFD700;"></i>
+          <i data-lucide="star" class="w-4 h-4" style="color:#FFD700; fill:#FFD700;"></i>
+          <i data-lucide="star" class="w-4 h-4" style="color:#FFD700; fill:#FFD700;"></i>
+          <i data-lucide="star" class="w-4 h-4" style="color:#FFD700; fill:#FFD700;"></i>
+        </div>
+        <p class="text-[#9CA3AF] text-sm leading-relaxed mb-4">"The Sculpt Leggings held their shape through three washes and a full leg day. Nothing sags."</p>
+        <p class="text-sm font-semibold text-white">Ada O.</p>
+      </div>
+
+      <div class="p-6 rounded-xl border border-[#D4AF37]/15 bg-[#0B0B0B]">
+        <div class="flex gap-1 mb-3">
+          <i data-lucide="star" class="w-4 h-4" style="color:#FFD700; fill:#FFD700;"></i>
+          <i data-lucide="star" class="w-4 h-4" style="color:#FFD700; fill:#FFD700;"></i>
+          <i data-lucide="star" class="w-4 h-4" style="color:#FFD700; fill:#FFD700;"></i>
+          <i data-lucide="star" class="w-4 h-4" style="color:#FFD700; fill:#FFD700;"></i>
+          <i data-lucide="star" class="w-4 h-4" style="color:#FFD700; fill:#FFD700;"></i>
+        </div>
+        <p class="text-[#9CA3AF] text-sm leading-relaxed mb-4">"First BC set and it won't be the last — the waistband actually stays put during squats."</p>
+        <p class="text-sm font-semibold text-white">Fisayo A.</p>
+      </div>
+
+      <div class="p-6 rounded-xl border border-[#D4AF37]/15 bg-[#0B0B0B]">
+        <div class="flex gap-1 mb-3">
+          <i data-lucide="star" class="w-4 h-4" style="color:#FFD700; fill:#FFD700;"></i>
+          <i data-lucide="star" class="w-4 h-4" style="color:#FFD700; fill:#FFD700;"></i>
+          <i data-lucide="star" class="w-4 h-4" style="color:#FFD700; fill:#FFD700;"></i>
+          <i data-lucide="star" class="w-4 h-4" style="color:#FFD700; fill:#FFD700;"></i>
+          <i data-lucide="star" class="w-4 h-4" style="color:#FFD700; fill:#FFD700;"></i>
+        </div>
+        <p class="text-[#9CA3AF] text-sm leading-relaxed mb-4">"Ordered the Cocoa set for a shoot and the color matched perfectly on camera. Fit is everything."</p>
+        <p class="text-sm font-semibold text-white">Ngozi E.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================ -->
+<!-- Newsletter -->
+<!-- ============================================================ -->
+<section class="py-16 md:py-20">
+  <div class="max-w-4xl mx-auto px-4 md:px-8 text-center">
+    <h2 class="bc-display text-3xl md:text-4xl mb-3">Join the <span class="gold-text">BC VIP Club</span></h2>
+    <p class="text-[#9CA3AF] mb-8">Get 15% off your first drop and early access to new releases.</p>
+    <form id="newsletterForm" class="flex flex-col sm:flex-row gap-3 max-w-md mx-auto">
+      <input type="email" required placeholder="Enter your email" class="flex-1 bg-[#121212] border border-[#9CA3AF]/30 rounded-full px-5 py-3 text-sm text-white placeholder-[#9CA3AF] focus:outline-none focus:border-[#FFD700]" />
+      <button type="submit" class="px-7 py-3 rounded-full gold-bg text-black font-semibold text-sm hover:opacity-90 transition-opacity">Get 15% Off</button>
+    </form>
+  </div>
+</section>
+
+<!-- ============================================================ -->
+<!-- Footer -->
+<!-- ============================================================ -->
+<footer class="border-t border-[#D4AF37]/20 bg-[#0B0B0B] pt-14 pb-8">
+  <div class="max-w-7xl mx-auto px-4 md:px-8 grid md:grid-cols-4 gap-10 mb-10">
+    <div>
+      <p class="bc-display text-2xl mb-3 gold-text">BodiedFitByCandy</p>
+      <p class="text-[#9CA3AF] text-sm">Founded by Oleita Victory. Sculpted for power, designed for elegance.</p>
+    </div>
+    <div>
+      <p class="text-white font-semibold mb-3 text-sm">Shop</p>
+      <ul class="space-y-2 text-sm text-[#9CA3AF]">
+        <li><a href="#best-sellers" class="hover:text-[#FFD700]">Best Sellers</a></li>
+        <li><a href="#collections" class="hover:text-[#FFD700]">Collections</a></li>
+        <li><a href="#" class="hover:text-[#FFD700]">New Arrivals</a></li>
+      </ul>
+    </div>
+    <div>
+      <p class="text-white font-semibold mb-3 text-sm">Company</p>
+      <ul class="space-y-2 text-sm text-[#9CA3AF]">
+        <li><a href="#about-bc" class="hover:text-[#FFD700]">About BC</a></li>
+        <li><a href="#reviews" class="hover:text-[#FFD700]">Reviews</a></li>
+        <li><a href="#" class="hover:text-[#FFD700]">Contact</a></li>
+      </ul>
+    </div>
+    <div>
+      <p class="text-white font-semibold mb-3 text-sm">Follow</p>
+      <div class="flex gap-3">
+        <a href="#" aria-label="Instagram" class="w-9 h-9 rounded-full border border-[#9CA3AF]/30 flex items-center justify-center hover:border-[#FFD700] hover:text-[#FFD700] transition-colors"><i data-lucide="instagram" class="w-4 h-4"></i></a>
+        <a href="#" aria-label="Facebook" class="w-9 h-9 rounded-full border border-[#9CA3AF]/30 flex items-center justify-center hover:border-[#FFD700] hover:text-[#FFD700] transition-colors"><i data-lucide="facebook" class="w-4 h-4"></i></a>
+        <a href="#" aria-label="Twitter" class="w-9 h-9 rounded-full border border-[#9CA3AF]/30 flex items-center justify-center hover:border-[#FFD700] hover:text-[#FFD700] transition-colors"><i data-lucide="twitter" class="w-4 h-4"></i></a>
+      </div>
+    </div>
+  </div>
+  <div class="max-w-7xl mx-auto px-4 md:px-8 pt-6 border-t border-white/10 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-[#9CA3AF]">
+    <p>&copy; <span id="year"></span> BodiedFitByCandy. All rights reserved.</p>
+    <div class="flex gap-3 opacity-70">
+      <span class="px-2 py-1 border border-[#9CA3AF]/30 rounded">VISA</span>
+      <span class="px-2 py-1 border border-[#9CA3AF]/30 rounded">MC</span>
+      <span class="px-2 py-1 border border-[#9CA3AF]/30 rounded">PAYSTACK</span>
+    </div>
+  </div>
+</footer>
+
+<!-- ============================================================ -->
+<!-- Cart Drawer -->
+<!-- ============================================================ -->
+<div id="cartOverlay" class="hidden fixed inset-0 z-50">
+  <div id="cartBackdrop" class="absolute inset-0 bg-black/60 backdrop-blur-sm"></div>
+  <div id="cartDrawer" class="drawer absolute right-0 top-0 w-full max-w-sm h-full bg-[#121212] border-l border-[#D4AF37]/25 flex flex-col">
+    <div class="flex items-center justify-between px-5 py-5 border-b border-white/10">
+      <p class="bc-display text-xl">Your Bag</p>
+      <button id="closeCart" aria-label="Close cart"><i data-lucide="x" class="w-5 h-5 hover:text-[#FFD700]"></i></button>
+    </div>
+
+    <div id="cartItems" class="flex-1 overflow-y-auto px-5 py-4 space-y-4"></div>
+
+    <div class="px-5 py-5 border-t border-white/10">
+      <div class="flex items-center justify-between mb-4">
+        <span class="text-[#9CA3AF] text-sm">Subtotal</span>
+        <span id="subtotal" class="text-lg font-semibold text-[#FFD700]">$0.00</span>
+      </div>
+      <button id="checkoutBtn" disabled class="w-full py-3.5 rounded-full font-semibold text-sm flex items-center justify-center gap-2 transition-opacity bg-[#2a2a2a] text-[#6b6b6b] cursor-not-allowed">
+        Checkout <i data-lucide="chevron-right" class="w-4 h-4"></i>
+      </button>
+    </div>
+  </div>
+</div>
+
+<!-- Toast -->
+<div id="toast" class="hidden fixed bottom-6 left-1/2 -translate-x-1/2 z-50 bg-[#121212] border border-[#D4AF37]/40 text-white text-sm px-5 py-3 rounded-full shadow-lg fade-toast"></div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
